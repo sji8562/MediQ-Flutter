@@ -2,7 +2,7 @@ name: mediq_webapp
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -42,20 +42,19 @@ dependencies:
   dio: ^5.2.0 # 서버와 통신하기 위해 필요한 라이브러리 입니다.
   flutter_riverpod: ^2.3.5 # 상태관리 Riverpod 라이브러리 입니다.
   logger: ^1.3.0 # 콘솔창에서 결과물을 쉽게 확인할 수 있도록 하는 Log 라이브러리입니다.
-  flutter_secure_storage: ^8.0.0 # 어플리케이션 Secure Storage를 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
+  flutter_secure_storage:
+    ^8.0.0 # 어플리케이션 Secure Storage를 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
     #  google_fonts: ^6.1.0   # bootpay랑 의존성 충돌
-  google_fonts: ^4.0.4
+  google_fonts: ^6.2.1
   bottom_sheet: ^4.0.0
   line_icons: ^2.0.3
   url_launcher: ^6.2.1
-  geolocator: ^10.1.0   #지도
-
+  geolocator: ^10.1.0 #지도
+  go_router: ^17.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -69,11 +68,17 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  fonts:
+    - family: NotoSansKR
+      fonts:
+        - asset: assets/fonts/NotoSansKR-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/NotoSansKR-Bold.ttf
+          weight: 700
 
   # To add assets to your application, add an assets section, like this:
   # assets:
