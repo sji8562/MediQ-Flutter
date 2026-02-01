@@ -51,6 +51,13 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           height: 1.4,
                         ),
                       ),
+                      Flexible(
+                        flex: 1,
+                        child: Image.asset(
+                          'assets/images/onboarding_bg.png',
+                          fit: BoxFit.contain,
+                        ),
+                      ),
                     ],
                   ),
                 ),
